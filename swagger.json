@@ -6,7 +6,7 @@
       "title": "Create a Pet Profile"
     },
     "host": "your-api-id.execute-api.your-region.amazonaws.com",
-    "basePath": "/Prod",
+    "basePath": "/prod",
     "schemes": [
       "https"
     ],

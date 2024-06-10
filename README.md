@@ -21,7 +21,7 @@ This API is based on the Paws And Hearts project and provides a GraphQL interfac
 GraphQL Endpoint URL:
 
 ```sh
-https://<your-api-id>.execute-api.<your-region>.amazonaws.com/Prod/pet
+https://<your-api-id>.execute-api.<your-region>.amazonaws.com/prod/pet
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ For more details and to try out the API, please visit: https://kevinyen83.github
 
 **Request**
 
-- **URL**: `https://<your-api-id>.execute-api.<your-region>.amazonaws.com/Prod/pet`
+- **URL**: `https://<your-api-id>.execute-api.<your-region>.amazonaws.com/prod/pet`
 - **Method**: `POST`
 - **Headers**:
   - `Content-Type: application/json`

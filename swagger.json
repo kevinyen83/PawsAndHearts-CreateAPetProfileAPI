@@ -1,0 +1,174 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "This API is based on the Paws And Hearts project and provides a GraphQL interface for managing pet profiles.\nUsers can create and read pet profiles through this interface.\nPlease feel free to review the parent project: [Paws And Hearts](https://github.com/kevinyen83/PawsAndHearts)",
+      "version": "1.0.0",
+      "title": "Paws And Hearts-Pet Profile GraphQL API"
+    },
+    "host": "your-api-id.execute-api.your-region.amazonaws.com",
+    "basePath": "/Prod",
+    "schemes": [
+      "https"
+    ],
+    "paths": {
+      "/pet": {
+        "post": {
+          "summary": "Create a Pet Profile",
+          "operationId": "createPetProfile",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "name": "x-api-key",
+                "in": "header",
+                "required": true,
+                "type": "string"
+              },
+            {
+              "in": "body",
+              "name": "petProfileData",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/PetInput"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful operation",
+              "schema": {
+                "$ref": "#/definitions/Pet"
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "PetInput": {
+        "type": "object",
+        "required": [
+          "age",
+          "applicantName",
+          "availability",
+          "category",
+          "color",
+          "contactEmail",
+          "contactPhone",
+          "description",
+          "gender",
+          "image",
+          "location",
+          "name",
+          "organizationName",
+          "petId",
+          "size",
+          "vaccination"
+        ],
+        "properties": {
+          "organizationName": {
+            "type": "string"
+          },
+          "applicantName": {
+            "type": "string"
+          },
+          "contactEmail": {
+            "type": "string"
+          },
+          "contactPhone": {
+            "type": "string"
+          },
+          "petId": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "age": {
+            "type": "integer"
+          },
+          "color": {
+            "type": "string"
+          },
+          "gender": {
+            "type": "string"
+          },
+          "size": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "vaccination": {
+            "type": "string"
+          },
+          "availability": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "Pet": {
+        "type": "object",
+        "properties": {
+          "petId": {
+            "type": "string"
+          },
+          "organizationName": {
+            "type": "string"
+          },
+          "applicantName": {
+            "type": "string"
+          },
+          "contactEmail": {
+            "type": "string"
+          },
+          "contactPhone": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "age": {
+            "type": "integer"
+          },
+          "color": {
+            "type": "string"
+          },
+          "gender": {
+            "type": "string"
+          },
+          "size": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "vaccination": {
+            "type": "string"
+          },
+          "availability": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }

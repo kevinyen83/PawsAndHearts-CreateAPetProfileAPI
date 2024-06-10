@@ -1,0 +1,1474 @@
+{
+  "pet-table": [
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "33"
+          },
+          "age": {
+            "S": "5"
+          },
+          "availability": {
+            "S": "No"
+          },
+          "category": {
+            "S": "Others"
+          },
+          "color": {
+            "S": "green"
+          },
+          "description": {
+            "S": "Turtle is a slow but steady companion. It enjoys basking in the sun and swimming in the pond."
+          },
+          "gender": {
+            "S": "unknown"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/33.jpeg"
+          },
+          "location": {
+            "S": "Pondside"
+          },
+          "name": {
+            "S": "Ruby"
+          },
+          "size": {
+            "S": "small"
+          },
+          "vaccination": {
+            "S": "No"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "22"
+          },
+          "age": {
+            "S": "3"
+          },
+          "availability": {
+            "S": "No"
+          },
+          "category": {
+            "S": "Dogs"
+          },
+          "color": {
+            "S": "Black"
+          },
+          "description": {
+            "S": "Coco is a friendly and outgoing dog who loves going on adventures."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/22.jpeg"
+          },
+          "location": {
+            "S": "Bark Avenue Rescue"
+          },
+          "name": {
+            "S": "Coco"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "18"
+          },
+          "age": {
+            "S": "6"
+          },
+          "availability": {
+            "S": "No"
+          },
+          "category": {
+            "S": "Cats"
+          },
+          "color": {
+            "S": "Tabby"
+          },
+          "description": {
+            "S": "Lily is a playful and affectionate cat who enjoys playing with feather toys."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/18.jpeg"
+          },
+          "location": {
+            "S": "Purrfect Paws Shelter"
+          },
+          "name": {
+            "S": "Lily"
+          },
+          "size": {
+            "S": "Medium"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "16"
+          },
+          "age": {
+            "S": "8"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Cats"
+          },
+          "color": {
+            "S": "Gray and White"
+          },
+          "description": {
+            "S": "Misty is a calm and gentle cat who enjoys lounging by the window."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/16.jpeg"
+          },
+          "location": {
+            "S": "Whisker Haven"
+          },
+          "name": {
+            "S": "Misty"
+          },
+          "size": {
+            "S": "Medium"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "2"
+          },
+          "age": {
+            "S": "3"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Dogs"
+          },
+          "color": {
+            "S": "Brown"
+          },
+          "description": {
+            "S": "Buddy is a loyal and energetic dog. He enjoys long walks and playing fetch."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/2.jpeg"
+          },
+          "location": {
+            "S": "Parkside"
+          },
+          "name": {
+            "S": "Buddy"
+          },
+          "size": {
+            "S": "Medium"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "13"
+          },
+          "age": {
+            "S": "4"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Cats"
+          },
+          "color": {
+            "S": "Orange"
+          },
+          "description": {
+            "S": "Peaches is a sweet and gentle cat who loves being pampered."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/13.jpeg"
+          },
+          "location": {
+            "S": "Purrfect Paws Shelter"
+          },
+          "name": {
+            "S": "Peaches"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "8"
+          },
+          "age": {
+            "S": "7"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Cats"
+          },
+          "color": {
+            "S": "Gray"
+          },
+          "description": {
+            "S": "Sasha is an independent cat with a sweet and gentle personality."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/8.jpeg"
+          },
+          "location": {
+            "S": "Purrfect Paws Shelter"
+          },
+          "name": {
+            "S": "Sasha"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "9"
+          },
+          "age": {
+            "S": "1"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Dogs"
+          },
+          "color": {
+            "S": "White"
+          },
+          "description": {
+            "S": "Charlie is a playful and friendly dog who loves making new friends."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/9.jpeg"
+          },
+          "location": {
+            "S": "Canine Companions Rescue"
+          },
+          "name": {
+            "S": "Charlie"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "31"
+          },
+          "age": {
+            "S": "2"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Others"
+          },
+          "color": {
+            "S": "black and white"
+          },
+          "description": {
+            "S": "Oreo is a friendly and curious pet rabbit. He enjoys hopping around and exploring his surroundings."
+          },
+          "gender": {
+            "S": "male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/31.jpeg"
+          },
+          "location": {
+            "S": "Shelter Haven"
+          },
+          "name": {
+            "S": "Oreo"
+          },
+          "size": {
+            "S": "small"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "6"
+          },
+          "age": {
+            "S": "3"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Birds"
+          },
+          "color": {
+            "S": "Blue"
+          },
+          "description": {
+            "S": "Polly is a talkative parrot who enjoys socializing and learning new words."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/6.jpeg"
+          },
+          "location": {
+            "S": "Feathered Friends Sanctuary"
+          },
+          "name": {
+            "S": "Polly"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "28"
+          },
+          "age": {
+            "S": "3"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Cats"
+          },
+          "color": {
+            "S": "White"
+          },
+          "description": {
+            "S": "Angel is a sweet and gentle cat who enjoys cuddling with her human companions."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/28.jpeg"
+          },
+          "location": {
+            "S": "Purrfect Paws Shelter"
+          },
+          "name": {
+            "S": "Angel"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "30"
+          },
+          "age": {
+            "S": "1"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Birds"
+          },
+          "color": {
+            "S": "Blue and Yellow"
+          },
+          "description": {
+            "S": "Sky is a vibrant parrot who enjoys flying and perching on shoulders."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/30.jpeg"
+          },
+          "location": {
+            "S": "Feathered Friends Sanctuary"
+          },
+          "name": {
+            "S": "Sky"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "No"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "35"
+          },
+          "age": {
+            "S": "?"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Dogs"
+          },
+          "color": {
+            "S": "green"
+          },
+          "description": {
+            "S": "Hazel is a friendly friend who plays the guitar and sings beautifully. She has a great sense of aesthetics and programming."
+          },
+          "gender": {
+            "S": "female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/35.jpeg"
+          },
+          "location": {
+            "S": "\"UTS, Sydney\""
+          },
+          "name": {
+            "S": "Hazel"
+          },
+          "size": {
+            "S": "small"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "24"
+          },
+          "age": {
+            "S": "2"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Dogs"
+          },
+          "color": {
+            "S": "White"
+          },
+          "description": {
+            "S": "Lola is a playful and energetic dog who loves running in the park."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/24.jpeg"
+          },
+          "location": {
+            "S": "Happy Tails Adoption Center"
+          },
+          "name": {
+            "S": "Lola"
+          },
+          "size": {
+            "S": "Medium"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "27"
+          },
+          "age": {
+            "S": "6"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Dogs"
+          },
+          "color": {
+            "S": "Brown"
+          },
+          "description": {
+            "S": "Baxter is a loyal and protective dog who will always watch over his family."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/27.jpeg"
+          },
+          "location": {
+            "S": "Sunshine Kennels"
+          },
+          "name": {
+            "S": "Baxter"
+          },
+          "size": {
+            "S": "Large"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "0"
+          },
+          "age": {
+            "S": "13"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Cats"
+          },
+          "color": {
+            "S": "Orange"
+          },
+          "description": {
+            "S": "Coffee is a friendly and adorable cat."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/0.jpeg"
+          },
+          "location": {
+            "S": "Glebe"
+          },
+          "name": {
+            "S": "Coffee"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "5"
+          },
+          "age": {
+            "S": "5"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Cats"
+          },
+          "color": {
+            "S": "Tabby"
+          },
+          "description": {
+            "S": "Whiskers is an affectionate cat who loves being pampered and cuddled."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/5.jpeg"
+          },
+          "location": {
+            "S": "Feline Friends Shelter"
+          },
+          "name": {
+            "S": "Whiskers"
+          },
+          "size": {
+            "S": "Medium"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "4"
+          },
+          "age": {
+            "S": "4"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Dogs"
+          },
+          "color": {
+            "S": "Black"
+          },
+          "description": {
+            "S": "Rocky is a gentle giant who enjoys lounging and going for leisurely walks."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/4.jpeg"
+          },
+          "location": {
+            "S": "Hillsboro"
+          },
+          "name": {
+            "S": "Rocky"
+          },
+          "size": {
+            "S": "Large"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "32"
+          },
+          "age": {
+            "S": "4"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Birds"
+          },
+          "color": {
+            "S": "yellow"
+          },
+          "description": {
+            "S": "Sunny is a bright and cheerful canary. She loves to sing and brighten up your day with her melodies."
+          },
+          "gender": {
+            "S": "female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/32.jpeg"
+          },
+          "location": {
+            "S": "Sunshine Sanctuary"
+          },
+          "name": {
+            "S": "Sunny"
+          },
+          "size": {
+            "S": "small"
+          },
+          "vaccination": {
+            "S": "No"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "34"
+          },
+          "age": {
+            "S": "1"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Others"
+          },
+          "color": {
+            "S": "gray"
+          },
+          "description": {
+            "S": "Whiskers is an adorable pet hamster. He loves running on his wheel and hiding treats in his cheeks."
+          },
+          "gender": {
+            "S": "male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/34.jpeg"
+          },
+          "location": {
+            "S": "Whisker's Haven"
+          },
+          "name": {
+            "S": "Whiskers"
+          },
+          "size": {
+            "S": "small"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "23"
+          },
+          "age": {
+            "S": "4"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Cats"
+          },
+          "color": {
+            "S": "Gray"
+          },
+          "description": {
+            "S": "Whisper is a quiet and gentle cat who enjoys spending time with his human companions."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/23.jpeg"
+          },
+          "location": {
+            "S": "Purrfect Paws Shelter"
+          },
+          "name": {
+            "S": "Whisper"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "19"
+          },
+          "age": {
+            "S": "2"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Dogs"
+          },
+          "color": {
+            "S": "Brown"
+          },
+          "description": {
+            "S": "Teddy is a lovable and cuddly dog who enjoys snuggling on the couch."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/19.jpeg"
+          },
+          "location": {
+            "S": "Canine Companions Rescue"
+          },
+          "name": {
+            "S": "Teddy"
+          },
+          "size": {
+            "S": "Medium"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "26"
+          },
+          "age": {
+            "S": "7"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Cats"
+          },
+          "color": {
+            "S": "Calico"
+          },
+          "description": {
+            "S": "Mittens is a friendly and outgoing cat who loves making new feline friends."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/26.jpeg"
+          },
+          "location": {
+            "S": "Whisker Haven"
+          },
+          "name": {
+            "S": "Mittens"
+          },
+          "size": {
+            "S": "Medium"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "7"
+          },
+          "age": {
+            "S": "2"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Dogs"
+          },
+          "color": {
+            "S": "Golden"
+          },
+          "description": {
+            "S": "Leo is an energetic dog who loves playing fetch and going for runs."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/7.jpeg"
+          },
+          "location": {
+            "S": "Sunshine Kennels"
+          },
+          "name": {
+            "S": "Leo"
+          },
+          "size": {
+            "S": "Medium"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "11"
+          },
+          "age": {
+            "S": "6"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Cats"
+          },
+          "color": {
+            "S": "Calico"
+          },
+          "description": {
+            "S": "Luna is a curious and playful cat who loves exploring her surroundings."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/11.jpeg"
+          },
+          "location": {
+            "S": "Whisker Haven"
+          },
+          "name": {
+            "S": "Luna"
+          },
+          "size": {
+            "S": "Medium"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "3"
+          },
+          "age": {
+            "S": "2"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Birds"
+          },
+          "color": {
+            "S": "Green"
+          },
+          "description": {
+            "S": "Kiwi is a colorful parrot who loves to mimic sounds and interact with people."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/3.jpeg"
+          },
+          "location": {
+            "S": "Aviary Haven"
+          },
+          "name": {
+            "S": "Kiwi"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "No"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "20"
+          },
+          "age": {
+            "S": "5"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Birds"
+          },
+          "color": {
+            "S": "Multicolored"
+          },
+          "description": {
+            "S": "Rainbow is a vibrant parrot who loves spreading joy with her colorful feathers."
+          },
+          "gender": {
+            "S": "Female"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/20.jpeg"
+          },
+          "location": {
+            "S": "Feathered Friends Sanctuary"
+          },
+          "name": {
+            "S": "Rainbow"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "No"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "29"
+          },
+          "age": {
+            "S": "4"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Dogs"
+          },
+          "color": {
+            "S": "Red"
+          },
+          "description": {
+            "S": "Rusty is an active and playful dog who loves going for long walks in the park."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/29.jpeg"
+          },
+          "location": {
+            "S": "Canine Companions Rescue"
+          },
+          "name": {
+            "S": "Rusty"
+          },
+          "size": {
+            "S": "Medium"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "21"
+          },
+          "age": {
+            "S": "5"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Cats"
+          },
+          "color": {
+            "S": "Orange Tabby"
+          },
+          "description": {
+            "S": "Oliver is a curious and playful cat who enjoys exploring new places."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/21.jpeg"
+          },
+          "location": {
+            "S": "Whisker Haven"
+          },
+          "name": {
+            "S": "Oliver"
+          },
+          "size": {
+            "S": "Medium"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "25"
+          },
+          "age": {
+            "S": "2"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Birds"
+          },
+          "color": {
+            "S": "Green"
+          },
+          "description": {
+            "S": "Rio is a cheerful parrot who loves singing and dancing to music."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/25.jpeg"
+          },
+          "location": {
+            "S": "Aviary Haven"
+          },
+          "name": {
+            "S": "Rio"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "No"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "12"
+          },
+          "age": {
+            "S": "5"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Dogs"
+          },
+          "color": {
+            "S": "Brown"
+          },
+          "description": {
+            "S": "Rex is a loyal and protective dog who enjoys long hikes and cuddles."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/12.jpeg"
+          },
+          "location": {
+            "S": "Bark Avenue Rescue"
+          },
+          "name": {
+            "S": "Rex"
+          },
+          "size": {
+            "S": "Large"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "17"
+          },
+          "age": {
+            "S": "4"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Dogs"
+          },
+          "color": {
+            "S": "Golden"
+          },
+          "description": {
+            "S": "Max is an outgoing and friendly dog who loves making new friends at the park."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/17.jpeg"
+          },
+          "location": {
+            "S": "Sunshine Kennels"
+          },
+          "name": {
+            "S": "Max"
+          },
+          "size": {
+            "S": "Large"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "10"
+          },
+          "age": {
+            "S": "4"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Birds"
+          },
+          "color": {
+            "S": "Yellow"
+          },
+          "description": {
+            "S": "Feathers is a cheerful parrot who enjoys singing and dancing."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/10.jpeg"
+          },
+          "location": {
+            "S": "Feathered Friends Sanctuary"
+          },
+          "name": {
+            "S": "Feathers"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "No"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "15"
+          },
+          "age": {
+            "S": "3"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Birds"
+          },
+          "color": {
+            "S": "Orange"
+          },
+          "description": {
+            "S": "Sunny is a friendly parrot who loves soaking up the sun and chatting with people."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/15.jpeg"
+          },
+          "location": {
+            "S": "Aviary Haven"
+          },
+          "name": {
+            "S": "Sunny"
+          },
+          "size": {
+            "S": "Small"
+          },
+          "vaccination": {
+            "S": "No"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "petId": {
+            "S": "14"
+          },
+          "age": {
+            "S": "2"
+          },
+          "availability": {
+            "S": "Yes"
+          },
+          "category": {
+            "S": "Dogs"
+          },
+          "color": {
+            "S": "Black and White"
+          },
+          "description": {
+            "S": "Oscar is an intelligent and playful dog who enjoys learning new tricks."
+          },
+          "gender": {
+            "S": "Male"
+          },
+          "image": {
+            "S": "https://pet-profile-image-bucket.s3.ap-southeast-2.amazonaws.com/14.jpeg"
+          },
+          "location": {
+            "S": "Happy Tails Adoption Center"
+          },
+          "name": {
+            "S": "Oscar"
+          },
+          "size": {
+            "S": "Medium"
+          },
+          "vaccination": {
+            "S": "Yes"
+          }
+        }
+      }
+    }
+  ]
+}

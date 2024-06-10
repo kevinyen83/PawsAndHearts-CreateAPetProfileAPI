@@ -1,6 +1,6 @@
 # Paws And Hearts-Pet Profile GraphQL API
 
-![Alt text](https://github.com/kevinyen83/PawsAndHearts-AWSSAM-GraphQL-API/blob/main/screenshots/AWS.drawio.png)
+![Alt text](https://github.com/kevinyen83/PawsAndHearts-AWS-Python-GraphQL-API/blob/main/screenshots/AWS.drawio.png?raw=true)
 
 ## Introduction
 

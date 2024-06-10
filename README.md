@@ -28,7 +28,7 @@ https://<your-api-id>.execute-api.<your-region>.amazonaws.com/Prod/pet
 
 ### Swagger
 
-For more details and to try out the API, please visit: https://kevinyen83.github.io/PawsAndHearts-AWSSAM-GraphQL-API/
+For more details and to try out the API, please visit: https://kevinyen83.github.io/PawsAndHearts-CreateAPetProfileAPI/
 
 ### Create a Pet Profile
 

@@ -3,7 +3,7 @@
     "info": {
       "description": "This API is based on the Paws And Hearts project and provides a GraphQL interface for managing pet profiles.\nUsers can create and read pet profiles through this interface.\nPlease feel free to review the parent project: [Paws And Hearts](https://github.com/kevinyen83/PawsAndHearts)",
       "version": "1.0.0",
-      "title": "Paws And Hearts-Pet Profile GraphQL API"
+      "title": "Create a Pet Profile"
     },
     "host": "your-api-id.execute-api.your-region.amazonaws.com",
     "basePath": "/Prod",

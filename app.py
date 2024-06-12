@@ -3,11 +3,11 @@ import os
 
 import aws_cdk as cdk
 
-from paws_and_hearts_aws_python_graph_ql_api.paws_and_hearts_aws_python_graph_ql_api_stack import PawsAndHeartsAwsPythonGraphQlApiStack
+from paws_and_hearts_stack.py import PawsAndHeartsStack
 
 
 app = cdk.App()
-PawsAndHeartsAwsPythonGraphQlApiStack(app, "PawsAndHeartsAwsPythonGraphQlApiStack",
+PawsAndHeartsStack(app, "PawsAndHeartsStack",
     # If you don't specify 'env', this stack will be environment-agnostic.
     # Account/Region-dependent features and context lookups will not work,
     # but a single synthesized template can be deployed anywhere.

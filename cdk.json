@@ -1,5 +1,5 @@
 {
-  "app": "python3 paws_and_hearts_stack/paws_and_hearts_stack.py",
+  "app": "python3 paws_and_hearts_stack.py",
   "watch": {
     "include": [
       "**"
@@ -9,7 +9,13 @@
       "source.bat",
       "**/__init__.py",
       "**/__pycache__",
-      "tests"
+      "tests",
+      ".git",
+      ".venv",
+      "node_modules",
+      "cdk.out",
+      "build",
+      "dist"
     ]
   },
   "context": {

@@ -46,15 +46,14 @@ class PawsAndHeartsStack(Stack):
 
         lambda_function = _lambda.Function(self, 
             "PetApiFunction",
+            function_name="lambda_function",
             runtime=_lambda.Runtime.PYTHON_3_9,
-            handler="app.lambda_handler",
-            code=_lambda.Code.from_asset("pet_python_api"),
+            handler="lambda_function.lambda_handler",
+            code=_lambda.Code.from_asset("lambda_function.zip"),
             environment={
                 "S3_BUCKET": s3_bucket_name,
                 "DYNAMODB_TABLE": dynamodb_table_name
             },
-            memory_size=128,
-            timeout=cdk.Duration.seconds(10)
         )
 
         s3_bucket.grant_read_write(lambda_function)
@@ -69,32 +68,6 @@ class PawsAndHeartsStack(Stack):
             }
         )
 
-        request_template = {
-            "application/json": """
-            {
-                "body" : $input.json('$')
-            }
-            """
-        }
-
-        integration_responses = [{
-            "statusCode": "200",
-            "responseTemplates": {
-                "application/json": """
-                #set($inputRoot = $input.path('$'))
-                {
-                    "statusCode": 200,
-                    "message": "$inputRoot.message"
-                }
-                """
-            },
-            "responseParameters": {
-                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Api-Key'",
-                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET,POST,PATCH,DELETE'",
-                "method.response.header.Access-Control-Allow-Origin": "'*'"
-            }
-        }]
-
         lambda_integration = apigateway.LambdaIntegration(
             lambda_function,
             request_templates={"application/json": '{ "statusCode": "200" }'}
@@ -104,40 +77,9 @@ class PawsAndHeartsStack(Stack):
         health_api.add_method("GET", lambda_integration)
 
         pet_api = api.root.add_resource("pet")
-        pet_api.add_method("GET", lambda_integration, method_responses=[
-            {
-                "statusCode": "200",
-                "responseParameters": {
-                    "method.response.header.Access-Control-Allow-Headers": True,
-                    "method.response.header.Access-Control-Allow-Methods": True,
-                    "method.response.header.Access-Control-Allow-Origin": True
-                }
-            }
-        ])
-        pet_api.add_method("POST", lambda_integration, request_parameters={
-            "method.request.header.Content-Type": True,
-            "method.request.header.X-Api-Key": True
-        }, method_responses=[
-            {
-                "statusCode": "200",
-                "responseParameters": {
-                    "method.response.header.Access-Control-Allow-Headers": True,
-                    "method.response.header.Access-Control-Allow-Methods": True,
-                    "method.response.header.Access-Control-Allow-Origin": True
-                }
-            }
-        ])
-
-        pet_api.add_method("DELETE", lambda_integration, method_responses=[
-            {
-                "statusCode": "200",
-                "responseParameters": {
-                    "method.response.header.Access-Control-Allow-Headers": True,
-                    "method.response.header.Access-Control-Allow-Methods": True,
-                    "method.response.header.Access-Control-Allow-Origin": True
-                }
-            }
-        ])
+        pet_api.add_method("GET", lambda_integration)
+        pet_api.add_method("POST", lambda_integration)
+        pet_api.add_method("DELETE", lambda_integration)
 
         pets_api = api.root.add_resource("pets")
         pets_api.add_method("GET", lambda_integration)

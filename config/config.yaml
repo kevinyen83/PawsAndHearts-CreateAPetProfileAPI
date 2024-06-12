@@ -1,0 +1,121 @@
+openapi: "3.0.1"
+info:
+  title: "API Documentation"
+  description: "This is the API documentation for our Flask app."
+  version: "1.0.0"
+servers:
+  - url: "http://127.0.0.1:5000/api"
+paths:
+  /createPetProfile:
+    post:
+      tags:
+        - "Pet"
+      summary: "Create a new pet profile."
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: "object"
+              properties:
+                query:
+                  type: "string"
+                  example: "mutation CreatePet($petProfileData: PetInput!) { create_pet_profile(petProfileData: $petProfileData) { pet { petId name } } }"
+                variables:
+                  type: "object"
+                  properties:
+                    petProfileData:
+                      type: "object"
+                      properties:
+                        petId:
+                          type: "string"
+                          example: "1"
+                        organizationName:
+                          type: "string"
+                          example: "Animal Shelter"
+                        applicantName:
+                          type: "string"
+                          example: "John Doe"
+                        contactEmail:
+                          type: "string"
+                          example: "john.doe@example.com"
+                        contactPhone:
+                          type: "string"
+                          example: "1234567890"
+                        name:
+                          type: "string"
+                          example: "Fluffy"
+                        category:
+                          type: "string"
+                          example: "Cat"
+                        age:
+                          type: "integer"
+                          example: 2
+                        gender:
+                          type: "string"
+                          example: "Female"
+                        color:
+                          type: "string"
+                          example: "White"
+                        size:
+                          type: "string"
+                          example: "Small"
+                        location:
+                          type: "string"
+                          example: "New York"
+                        vaccination:
+                          type: "string"
+                          example: "Yes"
+                        availability:
+                          type: "string"
+                          example: "Available"
+                        image:
+                          type: "string"
+                          example: "http://example.com/fluffy.jpg"
+                        description:
+                          type: "string"
+                          example: "A lovely white cat."
+      responses:
+        '200':
+          description: "Pet profile created successfully."
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties:
+                  data:
+                    type: "object"
+                    properties:
+                      create_pet_profile:
+                        type: "object"
+                        properties:
+                          pet:
+                            type: "object"
+                            properties:
+                              petId:
+                                type: "string"
+                                example: "1"
+                              name:
+                                type: "string"
+                                example: "Fluffy"
+        '400':
+          description: "Bad Request"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties:
+                  error:
+                    type: "string"
+                    example: "Missing required fields"
+        '500':
+          description: "Internal Server Error"
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties:
+                  error:
+                    type: "string"
+                    example: "Error saving pet"
+components: {}

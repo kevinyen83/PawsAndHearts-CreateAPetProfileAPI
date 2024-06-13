@@ -63,7 +63,7 @@ class PawsAndHeartsStack(Stack):
             description="API for Pet Management",
             default_cors_preflight_options={
                 "allow_origins": apigateway.Cors.ALL_ORIGINS,
-                "allow_methods": ["OPTIONS", "GET", "POST", "PATCH", "DELETE"],
+                "allow_methods": apigateway.Cors.ALL_METHODS,
                 "allow_headers": ["Content-Type", "X-Api-Key"]
             }
         )
@@ -73,19 +73,58 @@ class PawsAndHeartsStack(Stack):
             request_templates={"application/json": '{ "statusCode": "200" }'}
         )
 
+        cors_options = apigateway.CorsOptions(
+            allow_origins=apigateway.Cors.ALL_ORIGINS,
+            allow_methods=apigateway.Cors.ALL_METHODS,
+            allow_headers=["Content-Type", "X-Api-Key"]
+        )
+
         health_api = api.root.add_resource("health")
-        health_api.add_method("GET", lambda_integration)
+        health_api_method = health_api.add_method("GET", lambda_integration)
+        health_api_method.node.default_child.cors = cors_options
 
         pet_api = api.root.add_resource("pet")
-        pet_api.add_method("GET", lambda_integration)
-        pet_api.add_method("POST", lambda_integration)
-        pet_api.add_method("DELETE", lambda_integration)
+        pet_api_method = pet_api.add_method("GET", lambda_integration)
+        pet_api_method.node.default_child.cors = cors_options
+
+        pet_api_method = pet_api.add_method(
+            "POST",
+            apigateway.MockIntegration(
+                integration_responses=[
+                    {
+                        "statusCode": "200",
+                        "responseParameters": {
+                            "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Api-Key'",
+                            "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET,POST,PATCH,DELETE'",
+                            "method.response.header.Access-Control-Allow-Origin": "'*'",
+                        },
+                    }
+                ]
+            ),
+            method_responses=[
+                {
+                    "statusCode": "200",
+                    "responseParameters": {
+                        "method.response.header.Access-Control-Allow-Headers": True,
+                        "method.response.header.Access-Control-Allow-Methods": True,
+                        "method.response.header.Access-Control-Allow-Origin": True,
+                    },
+                }
+            ]
+        )
+
+        pet_api_method.node.default_child.cors = cors_options
+
+        pet_api_method = pet_api.add_method("DELETE", lambda_integration)
+        pet_api_method.node.default_child.cors = cors_options
 
         pets_api = api.root.add_resource("pets")
-        pets_api.add_method("GET", lambda_integration)
+        pets_api_method = pets_api.add_method("GET", lambda_integration)
+        pets_api_method.node.default_child.cors = cors_options
 
         update_api = api.root.add_resource("updateAvailability")
-        update_api.add_method("PATCH", lambda_integration)
+        update_api_method = update_api.add_method("PATCH", lambda_integration)
+        update_api_method.node.default_child.cors = cors_options
 
         table = dynamodb.Table(self, dynamodb_table_name,
             table_name=dynamodb_table_name,
